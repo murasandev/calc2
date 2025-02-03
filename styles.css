@@ -12,9 +12,28 @@ body{
     width: 350px;
 }
 
-.screen {
+.screen-container {
     border: 1px solid red;
     height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-screen,
+.bot-screen {
+    border:1px solid green;
+    display: flex;
+    justify-content: end;
+}
+
+.top-screen {
+    flex: 2;
+    align-items: center;
+}
+
+.bot-screen {
+    flex: 5;
+    align-items: center;
 }
 
 .row-container {
@@ -25,7 +44,7 @@ body{
     justify-content: space-around;
 }
 
-.btn {
+.row-container div {
     border: 1px solid pink;
     width: 20%;
     display: flex;
